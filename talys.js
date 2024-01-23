@@ -8,11 +8,11 @@ var alturaCaixa = caixa.offsetHeight;
 var larguraBody = body.offsetWidth;
 var alturaBody = body.offsetHeight;
 
-var limitadorLargura = larguraBody - larguraCaixa;
-var limitadorAltura = alturaBody - alturaCaixa;
+var limitadorLargura = larguraBody - larguraCaixa - 10;
+var limitadorAltura = alturaBody - alturaCaixa - 10;
 
-var margemLargura = larguraCaixa / 2;
-var margemAltura = alturaCaixa / 2;
+var margemLargura = larguraCaixa;
+var margemAltura = alturaCaixa;
 
 var novaLargura = 0
 var novaAltura = 0
@@ -30,8 +30,8 @@ function aceitou() {
 
 
 function reposicionar() {
-    novaLargura = Math.floor(Math.random() * (margemLargura - limitadorLargura) + limitadorLargura);
-    novaAltura = Math.floor(Math.random() * (margemAltura - limitadorAltura) + limitadorAltura);
+    novaLargura = Math.floor(Math.random() * (10 - limitadorLargura) + limitadorLargura);
+    novaAltura = Math.floor(Math.random() * (10 - limitadorAltura) + limitadorAltura);
 
     caixa.style.left = novaLargura + 'px';
     caixa.style.top = novaAltura + 'px';

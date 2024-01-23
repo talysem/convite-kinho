@@ -132,6 +132,13 @@ html {
     top: 45%;
     left: calc(50% - 175px);
     font-size: 24px;
+    transition: .1s;
+}
+
+@media (max-width: 500px) {
+    #caixa {
+        max-width: 250px;
+    }
 }
 
 .texto {
